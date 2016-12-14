@@ -3,7 +3,7 @@
   "theme": "syntax",
   "version": "0.1.0",
   "private": false,
-  "description": "A template syntax theme to build from",
+  "description": "A syntax theme for Atom based on TRON: Legacy.",
   "repository": "https://github.com/jovrtn/base16-tr2n-syntax",
   "keywords": [
     "base16",
