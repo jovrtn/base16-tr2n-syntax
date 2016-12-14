@@ -1,0 +1,272 @@
+@import "syntax-variables";
+
+// Editor Colors
+
+.editor-colors {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+}
+
+.editor {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+
+  .wrap-guide {
+    background-color: @syntax-wrap-guide-color;
+  }
+
+  .indent-guide {
+    color: @syntax-indent-guide-color;
+  }
+
+  .invisible-character {
+    color: @syntax-invisible-character-color;
+  }
+
+  .gutter {
+    background-color: @syntax-gutter-background-color;
+    color: @syntax-gutter-text-color;
+
+    .line-number {
+      &.cursor-line {
+        background-color: @syntax-gutter-background-color-selected;
+        color: @syntax-gutter-text-color-selected;
+      }
+
+      &.cursor-line-no-selection {
+        color: @syntax-gutter-text-color-selected;
+      }
+    }
+  }
+
+  .invisible {
+    color: @syntax-text-color;
+  }
+
+  .cursor {
+    color: @syntax-cursor-color;
+  }reload
+
+  .selection .region {
+    background-color: @syntax-selection-color;
+  }
+}
+
+// base00 - Default Background
+
+:host,
+atom-text-editor {
+    background-color: @base16-color-base00;
+}
+// base01 - Lighter Background (Used for status bars)
+
+// base02 - Selection Background
+:host,
+atom-text-editor {
+    .selection .region {
+        background-color: @base16-color-base02;
+    }
+}
+
+// base03 - Comments, Invisibles, Line Highlighting
+
+.comment {
+    color: @base16-color-base03;
+}
+
+.punctuation {
+    &.comment {
+        color: @base16-color-base03;
+    }
+}
+
+:host,reload
+atom-text-editor {
+    .invisible-character {
+        color: @base16-color-base03;
+    }
+}
+
+// base04 - Dark Foreground (Used for status bars)
+
+// base05 - Default Foreground, Caret, Delimiters, Operators
+
+:host,
+atom-text-editor {
+    color: @base16-color-base05;
+
+    .cursor {
+        border-color: @base16-color-base05;
+    }
+}
+
+.meta {
+    &.delimiter {
+        color: @base16-color-base05;
+    }
+}
+
+.keyword {
+    &.operator {
+        color: @base16-color-base05;
+    }
+}
+
+// .punctuation {
+//     color: @base16-color-base05;
+// }
+
+
+// base06 - Light Foreground (Not often used)
+// base07 - Light Background (Not often used)
+// base08 - Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deleted
+
+.variable {
+    color: @base16-color-base08;
+}
+
+.support {
+    &.variable {
+        color: @base16-color-base08;
+    }
+}
+
+.entity.name.tag {
+    color: @base16-color-base08;
+}
+
+// base09 - Integers, Boolean, Constants, XML Attributes, Markup Link Url
+.constant {
+    color: @base16-color-base09;
+
+    &.numeric {
+        color: @base16-color-base09;
+    }
+
+    &.boolean {
+        color: @base16-color-base09;
+    }
+
+    &.character {
+        &.escape {
+            color: @base16-color-base09;
+        }
+    }
+
+    &.other {
+        &.color {
+            color: @base16-color-base09;
+        }
+
+        &.symbol {
+            color: @base16-color-base09;
+        }
+    }
+}
+
+.support {
+    &.constant {
+        color: @base16-color-base09
+    }
+}
+
+.keyword.other.unit {
+
+        color: @base16-color-base09
+}
+
+.entity.other.attribute-name {
+
+        color: @base16-color-base09;
+}
+
+// base0A - Classes, Markup Bold, Search Text Background
+.entity {
+    &.name {
+        &.class {
+            color: @base16-color-base0A;
+        }
+    }
+
+    &.type {
+        &.class {
+            color: @base16-color-base0A;
+        }
+    }
+}
+
+.support {
+    &.class {
+        color: @base16-color-base0A;
+    }
+}
+
+.markup {
+    &.bold {
+        font-weight: bold;
+        color: @base16-color-base0A;
+    }
+}
+// base0B - Strings, Inherited Class, Markup Code, Diff Inserted
+.string {
+    color: @base16-color-base0B;
+}
+
+// base0C - Support, Regular Expressions, Escape Characters, Markup Quotes
+
+// .support { color: @base16-color-base0C; }
+
+.string {
+    &.regexp {
+        color: @base16-color-base0C;
+    }
+}
+
+// base0D - Functions, Methods, Attribute IDs, Headings
+
+.entity {
+    &.function {
+        color: @base16-color-base0D;
+    }
+}
+
+.support {
+    &.function {
+        color: @base16-color-base0D;
+    }
+}
+
+.entity {
+    &.function {
+        color: @base16-color-base0D;
+    }
+}
+
+.markup {
+    &.heading {
+        color: @base16-color-base0D;
+    }
+}
+
+.entity.other.attribute-name.id {
+    color: @base16-color-base0D;
+}
+
+
+// base0E - Keywords, Storage, Selector, Markup Italic, Diff Changed
+
+.keyword {
+  color: @base16-color-base0E;
+}
+
+.storage {
+  color: @base16-color-base0E;
+}
+
+.meta {
+    &.selector {
+    color: @base16-color-base0E;
+  }
+}
+
+// base0F - Deprecated, Opening/Closing Embedded Language Tags e.g. <?php ?>
